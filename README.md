@@ -8,7 +8,7 @@
 > - `sudo docker run --name postgres -p 5432:5432 -v postgresl-data:/var/lib/postgresql/data -e POSTGRES_PASSWORD=mypass --restart always -d postgres:latest` 
 
 > create container elasticsearch
-> - `sudo docker run -d --name elasticsearch -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" elasticsearch:7.10.1`
+> - `sudo docker run -d --name elasticsearch -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" --restart always elasticsearch:7.17.3`
 
 > create container rabbitmq
 > - `sudo docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management`
