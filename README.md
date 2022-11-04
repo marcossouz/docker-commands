@@ -13,6 +13,8 @@
 > create container rabbitmq
 > - `sudo docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management`
 
+> create container mongodb
+> docker run --name mongodb -d -p 27017:27017 mongo:latest
 
 ```sudo rm -Rf /Applications/Docker.app
 sudo rm -f /usr/local/bin/docker
